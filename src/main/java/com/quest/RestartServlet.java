@@ -1,4 +1,4 @@
-package com.tictactoe;
+package com.quest;
 
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -10,7 +10,7 @@ import java.io.IOException;
 public class RestartServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-        req.getSession().invalidate();
-        resp.sendRedirect("/start");
+//        req.getSession().invalidate();
+        resp.sendRedirect("/logic");
     }
 }
